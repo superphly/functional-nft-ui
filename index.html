@@ -1,0 +1,215 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Functional NFT</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="container mt-5 ">
+    <div class="row">
+      <div class="col-3 border p-5">
+        <button class="btn btn-primary mb-5">Create New NFT</button>
+        <h4>My NFT Collections</h4>
+        <hr>
+        <ul>
+          <li><a href="#" class="text-decoration-none">Cirrus Bonds</a></li>
+          <li><a href="#" class="text-decoration-none">Stratus Insurance Policies</a></li>
+        </ul>
+        <h4>My Individual NFTs</h4>
+        <hr>
+        <ul>
+          <li><a href="#" class="text-decoration-none"><em>Cirrus</em> Bond #274346</a></li>
+          <li><a href="#" class="text-decoration-none"><em>Cirrus</em> Bond #976433</a></li>
+          <li><a href="#" class="text-decoration-none"><em>Cirrus</em> Bond #371172</a></li>
+          <li><a href="#" class="text-decoration-none"><em>Cirrus</em> Bond #691622</a></li>
+          <li><a href="#" class="text-decoration-none"><em>Cirrus</em> Bond #637272</a></li>
+          <li><a href="#" class="text-decoration-none"><em>Stratus</em> Policy #112773</a></li>
+          <li><a href="#" class="text-decoration-none"><em>Stratus</em> Policy #728271</a></li>
+          <li><a href="#" class="text-decoration-none"><em>Stratus</em> Policy #472944</a></li>
+          <li><a href="#" class="text-decoration-none"><em>Stratus</em> Policy #286222</a></li>
+        </ul>
+      </div>
+      <div class="col-9 p-5">
+        <h2>New NFT</h2>
+        <hr>
+        <div class="row pt-5">
+          <div class="col-2 pt-2"><strong>Collection</strong></div>
+          <div class="col-10">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select a Collection</option>
+              <option value="1">Cirrus Bonds</option>
+              <option value="2">Stratus Insurance</option>
+              <option value="3">New...</option>
+            </select>
+            <p class="pt-2">Assign the newly created NFT to an existing collection or create a new collection.</p>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-2"><strong>Modules</strong></div>
+          <div class="col-10">
+            <p>Modules can be added to your NFT to add extra functionality. Some modules may or may not be compatible with other modules.</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+              <label class="form-check-label" for="flexCheckDefault1">
+                Whitelist
+              </label>
+              <div class="pt-2 ps-2 border-start col-4">
+                <select class="form-select form-select-sm" aria-label="Default select example">
+                  <option selected>Select Whitelist to Use</option>
+                  <option value="1">PrimeTrust (US)</option>
+                  <option value="2">PrimeTrust (EU)</option>
+                  <option value="3">BitGo (Accredited)</option>
+                  <option value="4">BitGo (Qualified-A)</option>
+                  <option value="5">BitGo (Qualified-B)</option>
+                  <option value="6">Other (Specify)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+              <label class="form-check-label" for="flexCheckDefault2">
+                Royalties
+              </label>
+              <div class="pt-2 ps-2 border-start col-6">
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Recipient Address</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Slope</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Points</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Factor</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+              </div>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+              <label class="form-check-label" for="flexCheckDefault3">
+                Escrow
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault31">
+              <label class="form-check-label" for="flexCheckDefault31">
+                Dividends
+              </label>
+              <div class="pt-2 ps-2 border-start col-4">
+                <select class="form-select form-select-sm" aria-label="Default select example">
+                  <option selected>Frequency</option>
+                  <option value="1">Daily</option>
+                  <option value="2">Weekly</option>
+                  <option value="3">Monthly</option>
+                  <option value="4">Quarterly</option>
+                  <option value="5">Annually</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+              <label class="form-check-label" for="flexCheckDefault4">
+                Multisig
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+              <label class="form-check-label" for="flexCheckDefault5">
+                Marketplace
+              </label>
+              <div class="pt-2 ps-2 border-start col-6">
+                <select class="form-select form-select-sm" aria-label="Default select example">
+                  <option selected>Select Marketplace to Restrict To</option>
+                  <option value="1">DigiHorses</option>
+                  <option value="2">Tank Wars Depot</option>
+                  <option value="3">Nuevo MLS</option>
+                  <option value="6">Other (Specify)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+              <label class="form-check-label" for="flexCheckDefault6">
+                Metadata
+              </label>
+              <div class="pt-2 ps-2 border-start col-6">
+                <select class="form-select form-select-sm" aria-label="Default select example">
+                  <option selected>Select Schema</option>
+                  <option value="1">Real Estate Listing</option>
+                  <option value="2">Sports Franchise</option>
+                  <option value="3">United States Vehicle (VIN+)</option>
+                  <option value="6">Other (Specify)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7">
+              <label class="form-check-label" for="flexCheckDefault7">
+                Fractionalization
+              </label>
+              <div class="pt-2 ps-2 border-start col-4">
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Tokens</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Owner</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+              </div>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8">
+              <label class="form-check-label" for="flexCheckDefault8">
+                Oracling Service
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9">
+              <label class="form-check-label" for="flexCheckDefault9">
+                Tax
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
+              <label class="form-check-label" for="flexCheckDefault10">
+                Legal Agreements
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+
+</html>
